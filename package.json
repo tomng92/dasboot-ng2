@@ -5,6 +5,8 @@
   "angular-cli": {},
   "scripts": {
     "start": "ng serve",
+    "copy": "cpx \"src/**/*.{html,css}\" ./dist/out-tsc --verbose",
+    "scss": "npm-sass ./src/app/home/home.component.scss > ./dist/out-tsc/app/home/home.component.css",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
@@ -23,7 +25,8 @@
     "core-js": "^2.4.1",
     "rxjs": "5.0.0-beta.12",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.6.23"
+    "zone.js": "^0.6.23",
+    "bootstrap": "^4.0.0-alpha.4"
   },
   "devDependencies": {
     "@types/jasmine": "^2.2.30",

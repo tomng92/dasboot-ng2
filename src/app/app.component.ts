@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // moduleId: module.id,
+  selector: 'my-app',
+  template: `
+    <navbar></navbar>
+    <router-outlet></router-outlet>
+  `
+
 })
 export class AppComponent {
-  title = 'app works!';
+  public title = 'Angular2 Bootstrap4 Navbar';
 }
